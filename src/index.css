@@ -4,10 +4,46 @@
 
 * {
   color: #080911;
+  color: #fff;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  border-color: white;
+}
+body {
+  margin: 0;
 }
 
 .image-container {
   flex-basis: 40%;
+}
+.homepage {
+  background: url("./assets/quran4.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.hero {
+  height: 90%;
+}
+
+.hero-title {
+  text-shadow: 2px 2px 5px gray;
+}
+
+.player {
+  background: linear-gradient(
+    to right,
+    rgba(166, 145, 92, 0.9),
+    rgba(130, 94, 92, 0.5)
+  );
+  background: rgba(166, 145, 92, 0.8);
+}
+
+.swipe {
+  text-shadow: 2px 2px 10px black;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1em;
+  border: none;
 }
