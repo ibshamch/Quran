@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  color: #080911;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.image-container {
+  flex-basis: 40%;
+}
