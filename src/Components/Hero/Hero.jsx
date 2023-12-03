@@ -6,18 +6,18 @@ import left from "../../assets/leftcontrol.svg";
 import right from "../../assets/rightcontrol.svg";
 import repeat from "../../assets/repeat.svg";
 import shuffle from "../../assets/shuffle.svg";
-
+import { Link } from "react-router-dom";
 const Hero = ({ star, greenCircle }) => {
   return (
-    <section className="hero my-0 mx-auto w-11/12 flex flex-col justify-around p-3">
+    <section className="hero  my-0  mx-auto w-11/12 flex flex-col justify-around p-3">
       <div className="hero-title">
         <h1 className="text-5xl hero-title">
           Discover the Quran, <br />
           and Experience Islamic Music.
         </h1>
       </div>
-      <div className="hero-sub-container gap-4 flex justify-between py-4  ">
-        <div className="hero-sub-left gap-5 order-1 basis-4/12 p-5   flex flex-col justify-between ">
+      <div className="hero-sub-container gap-4 hidden lg:flex justify-center 2xl:justify-between py-4  ">
+        <div className="hero-sub-left order-1 hidden basis-4/12 p-5  2xl:flex flex-col justify-between ">
           <div className="rating items-center flex justify-evenly  ">
             <div className="rating-container flex items-center gap-2 basis-5/12 ">
               <img src={p1} className="w-8 h-8 rounded-full " alt="p1" />
@@ -61,9 +61,9 @@ const Hero = ({ star, greenCircle }) => {
             </div>
           </div>
           <div className=" mt-4">
-            <li className="swipe text-xl rounded-full">
-              Swap Left or Right to change Category
-            </li>
+            <Link to="/readQuran" className="swipe text-xl rounded-full">
+              Click Here to Read Quran
+            </Link>
           </div>
         </div>
         <div
@@ -71,6 +71,7 @@ const Hero = ({ star, greenCircle }) => {
           basis-8/12
           flex flex-col justify-between gap-5 p-10
           bg-black bg-opacity-50 rounded-lg 
+
           "
         >
           <div className="flex justify-between ">

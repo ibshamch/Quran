@@ -3,14 +3,18 @@ import sunImg from "../../assets/sun.svg";
 import taj from "../../assets/taj.svg";
 const Header = ({ headerNav }) => {
   return (
-    <header className="header flex justify-between items-center p-3 w-11/12 my-0 mx-auto">
+    <header className="header flex h-full justify-between items-center p-3 ">
       <div className="favicon-container flex justify-between items-center">
         <img src={taj} alt="taj" className="favicon w-5/12" />
         <div className="font-bold text-2xl ">Qoib</div>
       </div>
-      <div className="nav-container flex items-center justify-between gap-10">
-        {headerNav.map((navel) => {
-          return <div className="nav-el text-xl">{navel}</div>;
+      <div className="nav-container hidden md:flex items-center justify-between gap-10">
+        {headerNav.map((navel, i) => {
+          return (
+            <div key={i} className="nav-el text-xl">
+              {navel}
+            </div>
+          );
         })}
       </div>
       <div className="dark-mode-toggle flex items-center gap-3">
